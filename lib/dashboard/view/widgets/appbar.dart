@@ -48,7 +48,7 @@ class AppBarSection extends StatelessWidget {
             radius: 49,
             backgroundColor: kPrimaryColor,
             backgroundImage: NetworkImage(
-              'https://i.pinimg.com/736x/51/ec/d0/51ecd0532e8d08227b15fa65a55cf522.jpg',
+              'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png',
             ),
             // child: Icon(Icons.person, color: Colors.white),
           ),
