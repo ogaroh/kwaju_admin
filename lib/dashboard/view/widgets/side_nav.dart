@@ -17,7 +17,7 @@ class SideNavigation extends StatelessWidget {
         children: [
           Image.asset(
             'assets/images/logo.png',
-            height: 80,
+            height: 40,
             fit: BoxFit.contain,
           ),
           const Padding(
@@ -139,8 +139,9 @@ class NavItem extends StatelessWidget {
           Text(
             label,
             style: TextStyle(
-              color: isActive ? Colors.white : Colors.black54,
+              color: isActive ? Colors.white : Colors.black87,
               fontWeight: isActive ? FontWeight.bold : FontWeight.normal,
+              fontSize: 12,
             ),
           ),
         ],

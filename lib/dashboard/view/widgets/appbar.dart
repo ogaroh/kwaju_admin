@@ -1,4 +1,5 @@
 import 'package:admin/shared/theme/colors.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class AppBarSection extends StatelessWidget {
@@ -16,28 +17,21 @@ class AppBarSection extends StatelessWidget {
       child: Row(
         children: [
           // Image.asset('assets/images/logo.png'),
-           Text(
+          Text(
             'User/Admin/Orders/All Orders',
             style: TextStyle(
               decoration: TextDecoration.underline,
               color: Colors.grey.shade400,
-              fontSize: 12, fontWeight: FontWeight.bold,
+              fontSize: 12,
+              fontWeight: FontWeight.bold,
             ),
           ),
           const Spacer(),
-          SizedBox(
+          const SizedBox(
             width: 300,
-            child: TextField(
-              decoration: InputDecoration(
-                hintText: 'Type to search',
-                prefixIcon: const Icon(Icons.search),
-                filled: true,
-                fillColor: Colors.grey.shade200,
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(12),
-                  borderSide: BorderSide.none,
-                ),
-              ),
+            child: CupertinoSearchTextField(
+              placeholder: 'Type to search',
+              placeholderStyle: TextStyle(fontSize: 13),
             ),
           ),
           const SizedBox(width: 16),
@@ -52,8 +46,11 @@ class AppBarSection extends StatelessWidget {
           ),
           const CircleAvatar(
             radius: 49,
-            backgroundColor: kSecondaryColor,
-            child: Icon(Icons.person, color: Colors.white),
+            backgroundColor: kPrimaryColor,
+            backgroundImage: NetworkImage(
+              'https://i.pinimg.com/736x/51/ec/d0/51ecd0532e8d08227b15fa65a55cf522.jpg',
+            ),
+            // child: Icon(Icons.person, color: Colors.white),
           ),
         ],
       ),
