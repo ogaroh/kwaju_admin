@@ -10,6 +10,9 @@ A Very Good Project created by Very Good CLI.
 
 ---
 
+## Screenshots
+![alt text](<Screenshot 2024-12-02 at 13.00.22.png>) ![alt text](<Screenshot 2024-12-02 at 13.00.41.png>)
+
 ## Getting Started 🚀
 
 This project contains 3 flavors:
